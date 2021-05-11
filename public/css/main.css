@@ -1,0 +1,14 @@
+body {
+    background: #000;
+}
+
+
+.grid-container{
+    display: inline-grid;
+    background-color: green;
+}   
+
+.grid-item1{
+    grid-template-columns: 80px 250px 80px;
+    background:red;
+}

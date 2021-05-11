@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+                integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Nuevo Registro</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-title text-center">
+                        <h1>Editar Registro</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="/update/<%= rows.id %>" method="post" class="form">
+                            <div class="mb-3">
+                                <label for="matricula" class="form-label">Matrícula</label>
+                                <input type="text" name="matricula" id="matricula" value="<%= rows.matricula %>" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" value="<%= rows.nombre %>" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="uadscripcion" class="form-label">Unidad Adscripción</label>
+                                <input type="text" name="uadscripcion" id="uadscripcion" value="<%= rows.uadscripcion %>" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="turno" class="form-label">Turno</label>
+                                <input type="text" name="turno" id="turno" value="<%= rows.turno %>" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="domicilio" class="form-label">Domicilio</label>
+                                <input type="text" name="domicilio" id="domicilio" value="<%= rows.domicilio %>" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad</label>
+                                <input type="text" name="edad" id="edad" value="<%= rows.edad %>" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" name="email" id="email" value="<%= rows.email %>" class="form-control">                            
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="submit" value="Guardar" class="btn btn-primary">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

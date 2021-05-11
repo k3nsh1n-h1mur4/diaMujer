@@ -1,0 +1,30 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "\"Accion Femenil APP\"",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Isaac Abimael Cervantes Chaires",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "blob-stream": "^0.1.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-flash": "^0.0.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.17.1",
+    "html-pdf": "^3.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "passport-local": "^1.0.0",
+    "passport-login": "*",
+    "pdfkit": "^0.12.1",
+    "qrcode": "^1.4.4",
+    "request": "^2.88.2"
+  }
+}

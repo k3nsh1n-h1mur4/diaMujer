@@ -1,0 +1,6 @@
+1.- Install or import (fs) module
+2.- Create instance of PDFDOcument  ---> this instance is a readable stream. We'll be piping that stream into a 
+    writeable stream to save the file
+3.- Use pipe() function to do this, save resulting SampleDocuemnt.pdf into our root directory
+4.- Once created, add content, via text function.
+5.- Use end() function to close or ended the stream.
